@@ -1,4 +1,4 @@
-package pob3.exercicios.Exercicio03;
+package exercicios.exercicio03;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -15,11 +15,14 @@ import java.text.DecimalFormat;
     */
 
 public class DescontoInss {
-    public static void main(string[] args){
+    public static void main(String[] args){
 
             double valorHora;
             double horas;
             double total;
+
+            Scanner sc = new Scanner(System.in);
+            DecimalFormat df = new DecimalFormat("#.00");
 
             System.out.print("Digite o valor da hora: ");
             valorHora = sc.nextDouble();
@@ -31,6 +34,6 @@ public class DescontoInss {
 
             System.out.println("Total = " + df.format(total));
 
-        sc.close();
+            sc.close();
     }
 }
