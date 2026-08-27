@@ -1,4 +1,4 @@
-package pob3.exercicios.exercicio04;
+package exercicios.exercicio04;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -38,8 +38,6 @@ import java.text.DecimalFormat;
             perimetro = 2 * (base + altura);
 
             System.out.println("Area: " + df.format(area));
-            System.out.print("perimetro: " + df.format(perimetro));
-
-            sc.close();
+            System.out.println("perimetro: " + df.format(perimetro));
         }
     }
