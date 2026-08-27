@@ -1,4 +1,4 @@
-package exercicios.exercicio04;
+package pob3.exercicios.exercicio04;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -23,9 +23,23 @@ import java.text.DecimalFormat;
             Scanner sc = new Scanner(System.in);
             DecimalFormat df = new DecimalFormat("#.00");
 
+            double base;
+            double altura;
+            double area;
+            double perimetro;
 
+            System.out.print("Digite o tamanho da base (EX: 5): ");
+            base = sc.nextDouble();
 
+            System.out.print("Digite o tamanho da altura (EX: 3): ");
+            altura = sc.nextDouble();
+
+            area = base * altura;
+            perimetro = 2 * (base + altura);
+
+            System.out.println("Area: " + df.format(area));
+            System.out.print("perimetro: " + df.format(perimetro));
+
+            sc.close();
         }
-
-
     }
