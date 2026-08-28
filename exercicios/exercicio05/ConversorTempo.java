@@ -33,5 +33,7 @@ import java.text.DecimalFormat;
             segundos = resto;
 
             System.out.println(df.format(horas) + " hora(s)," + df.format(minutos) + " minuto(s) e " + df.format(segundos) + "segundo(s)");
+
+            sc.close();
         }
     }
