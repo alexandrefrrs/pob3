@@ -14,7 +14,6 @@ import java.text.DecimalFormat;
     
     Exemplo de Entrada: Base: 5.0, Altura: 3.0 
     Saída esperada: Área: 15.0, Perímetro: 16.0
-
     */
 
     public class AreaRetangulo{
