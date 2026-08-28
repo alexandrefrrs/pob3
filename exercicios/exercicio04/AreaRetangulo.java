@@ -39,5 +39,7 @@ import java.text.DecimalFormat;
 
             System.out.println("Area: " + df.format(area));
             System.out.println("perimetro: " + df.format(perimetro));
+     
+            sc.close();
         }
     }
