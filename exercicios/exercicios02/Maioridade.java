@@ -2,18 +2,33 @@ package exercicios.exercicios02;
 
 import java.util.Scanner;
 
-    /*Enunciado: Crie um programa que leia o ano de nascimento de uma pessoa e o ano atual. 
-    Calcule a idade e exiba se ela já é maior de idade (18 anos ou mais) ou menor de idade.
+public class Maioridade {
+    public static void main(String[] args) {
 
-    Conceitos: Operadores relacionais (>=) e subtração básica combinada com decisão.
-     */
+        Scanner sc = new Scanner(System.in);
 
-    public class Maioridade{
-        public static void main(string[] args){
+        int anoNascimento, anoAtual, idade;
 
-            Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o ano de nascimento: ");
+        anoNascimento = sc.nextInt();
 
+        System.out.print("Digite o ano atual: ");
+        anoAtual = sc.nextInt();
 
-            
-        }
+        idade = anoAtual - anoNascimento;
+
+        System.out.println("Idade: " + idade + " anos");
+
+        if (idade >= 18) {
+
+            System.out.println("Maior de idade");
+
+        } 
+            else {
+
+                System.out.println("Menor de idade");
+             }
+
+        sc.close();
     }
+}
